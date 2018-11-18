@@ -20,12 +20,14 @@ Registrou-se mais de 260 mil incidentes de violência armada, com informações 
 Proposta} 
 \par
 Atualmente, faltam quantidades grandes e facilmente acessíveis de dados detalhados sobre a violência armada em geral. 
-Para tal resolvemos focar na análise do contexto Norte Americano por ser um país que permite a regulamentação do uso de armas em alguns estados, gerando assim um índice de violência que demanda uma maior incidência de crimes cometidos com o uso delas. 
+Para tal resolvemos focar na análise do contexto Norte Americano por ser um país que permite a regulamentação do uso de armas em alguns estados, gerando assim um índice de violência que demanda uma maior incidência de crimes cometidos com o uso delas. Com isso, o nosso objetivo é traçar perfis de crimes que tenham a presença do uso de armas de fogo.
+\section{
+Metodologia} 
 \par
-Como mostrado na descrição da base estudada, relatórios como este e este mostram que Nikolas Cruz exibiu muitos sinais de alerta nas redes sociais antes do tiroteio, por exemplo. 
-Para esse fim, a partir dessa base de dados, podemos identificar e levantar hipóteses que nos levem a entender melhor a necessidade de um reforço em tais áreas com maior índice de ocorrências desse viés, tais quais:
+Podemos identificar e levantar padrões que nos levem a entender melhor a necessidade de um reforço em tais áreas com maior índice de ocorrências desse viés avaliando correlações entre os atributos presentes no \textit{dataset}, onde aplicamos a análise exploratória sobre os dados para corroborar hipóteses levantadas por nós, tais quais:
 \\
 \\
+
 \textbf{Hipóteses:}
 
 \begin{enumerate}
@@ -34,3 +36,19 @@ Para esse fim, a partir dessa base de dados, podemos identificar e levantar hip�
 \item Que tipo de armas possuem maior incidência nos casos de violência?
 \item Relacionar em quais  distritos de votação para senadores ocorrem mais violência armada.
 \end{enumerate}
+\\
+
+\par
+No que diz respeito a análise exploratória será montadas a visualização destes dados  através do que foi aprendido na disciplina com uso de gráficos que carregam consigo relações de medidas estatísticas, para verificar e entender o comportamento dos dados.  Tudo isso com o objetivo de obter a validação ou a refutação das hipóteses anteriores. Podemos afirmar que nessa etapa procuraremos descobrir relações como:
+\\
+\begin{enumerate}
+\item A distribuição de crimes a mão armada por grupos de pessoas no país.
+\item A evolução desses crimes nos condados no decorrer dos anos 
+\item A relação de Renda por incidência de crimes armados.
+\item Cruzar a relação acima pela a idade das pessoas que cometem esses crimes.
+\end{enumerate}
+\\
+\par
+Também será construído um mapa de calor para inferir o que não foi coberto pela a análise por se só dos dados. Assim ficará clara a distribuição desses crimes no EUA.    
+\par
+Após as análises descritas acima, será aplicada, também, a técnica de Árvore de Decisão com o objetivo de extrair alguns padrões nessa base de dados, e predizer descrições para \textit{clusters} dos crimes coletados.
