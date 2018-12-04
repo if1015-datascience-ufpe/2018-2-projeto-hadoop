@@ -20,7 +20,7 @@ Registrou-se mais de 260 mil incidentes de violência armada, com informações 
 Proposta} 
 \par
 Atualmente, faltam quantidades grandes e facilmente acessíveis de dados detalhados sobre a violência armada em geral. 
-Para tal resolvemos focar na análise do contexto Norte Americano por ser um país que permite a regulamentação do uso de armas em alguns estados, gerando assim um índice de violência que demanda uma maior incidência de crimes cometidos com o uso delas. Com isso, o nosso objetivo é traçar perfis de crimes que tenham a presença do uso de armas de fogo.
+Para tal resolvemos focar na análise do contexto Norte Americano por ser um país que permite a regulamentação do uso de armas em alguns estados, gerando assim um índice de violência que demanda uma maior incidência de crimes cometidos com o uso delas. Dessa forma, usaremos o método Self-organizing map (som) para verificar e apoiar a validação de nossas hipóteses. Como o método faz uso de uma abordagem não supervisionada de aprendizagem, através de redes neurais e separa as labels por região de aproximação da matriz de neurônios, como dito tentaremos confirmar nossos estudos através desta.  
 \section{
 Metodologia} 
 \par
@@ -31,10 +31,9 @@ Podemos identificar e levantar padrões que nos levem a entender melhor a necess
 \textbf{Hipóteses:}
 
 \begin{enumerate}
-\item Em que cidades ou condados têm maior probabilidade de ocorrer um crime à mão armada?
-\item Qual faixa etária de pessoas está presente na participação de tais crimes?
-\item Que tipo de armas possuem maior incidência nos casos de violência?
-\item Relacionar em quais  distritos de votação para senadores ocorrem mais violência armada.
+\item A quantidade de incidentes cometidos por menores de idade é maior em estados que possuem baixo investimento em educação.
+\item Os estados com alto Índice de Pobreza possuem uma maior mortalidade em incidentes do que estados que possuam baixo índice.
+\item A quantidade de mulheres que são vítimas em crimes tende a diminuir ao longo dos anos em cada estado.
 \end{enumerate}
 \\
 
@@ -44,11 +43,11 @@ No que diz respeito a análise exploratória será montadas a visualização des
 \begin{enumerate}
 \item A distribuição de crimes a mão armada por grupos de pessoas no país.
 \item A evolução desses crimes nos condados no decorrer dos anos 
-\item A relação de Renda por incidência de crimes armados.
-\item Cruzar a relação acima pela a idade das pessoas que cometem esses crimes.
+\item A relação de Desemprego por pobreza.
+\item Cruzar a relação acima pela incidência de crimes armados.
 \end{enumerate}
 \\
 \par
 Também será construído um mapa de calor para inferir o que não foi coberto pela a análise por se só dos dados. Assim ficará clara a distribuição desses crimes no EUA.    
 \par
-Após as análises descritas acima, será aplicada, também, a técnica de Árvore de Decisão com o objetivo de extrair alguns padrões nessa base de dados, e predizer descrições para \textit{clusters} dos crimes coletados.
+Após as análises descritas acima, será aplicada, também, a técnica de Clusterização nos dados de saída do (SOM) com o objetivo de extrair alguns padrões nessa base de dados, e predizer grupos para \textit{clusters} dos crimes coletados.
